@@ -1,0 +1,21 @@
+html, * {
+    box-sizing: border-box;
+}
+
+body {
+display: flex;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+   &&__items {
+        border: 1px solid black
+    }
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
