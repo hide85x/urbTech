@@ -15,7 +15,7 @@
     "url": "git+https://github.com/hide85x/urbTech"
   },
   "scripts": {
-    "build": "parcel build index.html --out-dir --public-url .",
+    "build": "parcel build index.html --out-dir docs --public-url .",
     "start": "parcel index.html --out-dir docs "
   },
   "keywords": [],
