@@ -116,6 +116,9 @@ body {
   flex-direction: column;
   padding: 200px;
 }
+.info img {
+  width: 30%;
+}
 @media (max-width: 800) {
   .info img {
     display: none;
@@ -319,6 +322,9 @@ body {
     flex-direction: column;
     gap: 10px;
   }
+}
+.ul4 i {
+  margin: 13px;
 }
 .ul4 i:hover {
   color: rgba(255, 14, 14, 0.603);

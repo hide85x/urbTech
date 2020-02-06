@@ -140,6 +140,9 @@ body {
     display: flex;
     flex-direction: column;
     padding: 200px;
+    img {
+        width: 30%;
+    }
     @media (max-width:800) {
         img {
             display: none;
@@ -358,6 +361,9 @@ body {
         display: flex;
         flex-direction: column;
         gap:10px
+    }
+    i {
+        margin: 13px;
     }
 
     i:hover {
