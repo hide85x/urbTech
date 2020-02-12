@@ -12,10 +12,6 @@ body {
     // background-image: linear-gradient(rgb(194, 194, 194), rgba(130, 130, 189, 0.507), white);
 
 }
-.main {
-
-}
-
 .navbar-nav {
     gap: 20px;
     cursor: pointer;
@@ -51,7 +47,6 @@ body {
 ;
 }
 .hero {
-    width: 100%;
     display: flex;
     justify-content:space-between ;
     align-items: stretch;
@@ -62,10 +57,7 @@ body {
     @media (max-width:800px) {
         font-size: 1em;
         flex-direction: column;
-
     }
-
-   
 }
 
 .firstbox {
@@ -107,34 +99,12 @@ body {
     padding:60px 10px;
     margin: 100px 5px;
     @media (max-width:900px) {
-        margin:60px 20px;
-        padding: 10px;
         display: none;
-        
-        
     }
-
     button {
         border:2px solid black
     }
-
-
 }
- 
-// .hero::after {
-//         background: url(foty/5.jpeg);
-//         background-position: center;
-//         background-size: cover;
-//         background-repeat: no-repeat;
-//         content: "";
-//         opacity: 0.4;
-//         top: 0;
-//         left: 0;
-//         bottom: 0;
-//         right: 0;
-//         position: absolute;
-//         z-index: -3;   
-//     }
 
 .info {
     display: flex;
@@ -143,15 +113,15 @@ body {
     img {
         width: 30%;
     }
-    @media (max-width:800) {
+    @media (max-width:800px) {
+        padding: 120px 20px;
         img {
-            display: none;
         }
-        .info__one {
+        &__one, &__two  {
+            text-align: center;
             flex-direction: column;
         };
     }
-
 
     &__one {
         display: flex;
@@ -159,6 +129,7 @@ body {
         align-items: center;
         gap: 10px;
         margin-bottom: 100px;
+        
     }
     &__two {
         display: flex;
@@ -185,7 +156,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: 0.7em;
+    font-size: 1.3em;
     margin: 30px 0;
     padding: 120px;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(155, 178, 219));
@@ -228,11 +199,13 @@ body {
 
 
 .footer {
+    background-color:rgba(109, 109, 109, 0.274);
     background-image: url(foty/footer.webp);
     background-size: contain;
     background-position: initial;
     background-repeat: no-repeat;
-    
+    margin-top: 100px;
+    border-top: 3px solid black;;
     padding: 30px 100px;
     display: grid;
     text-align: center;
@@ -245,19 +218,20 @@ body {
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 20px 30px;
+        padding: 20px 10px;
         
     }
 
     .title {
         font-weight: 900;
-        background-color: rgba(255, 255, 255, 0.432);
-        padding: 20px;
-        grid-column-start: 2;
+        margin-bottom: 150px;
+        margin-left: 50px;
+        grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 1;
         justify-self: flex-end;
         @media (max-width:900px) {
+           margin: 16px;
            grid-column-start: 5;
            grid-row-start: 0;
            z-index: 888;
@@ -266,26 +240,30 @@ body {
 
     }
     .oneh2 {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
    
     &__one  {
-        background-color: rgba(177, 8, 8, 0.315);
-        width: 70%;
+        background-color: rgba(177, 8, 8, 0.432);
         color: white;
-        margin: auto 0;
+        display: flex;
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 3;
         grid-row-start: 1;
+       >h2 {
+        margin: 30px;
+        padding: 0 30px;
+        text-align:left;;
+            }
+        img {
+            background-color: white;
+            opacity: 1;
+        }
         @media (max-width:900px) {
             display: flex;
             text-align: center;
-            word-wrap: break-word;
-            white-space: normal;
             flex-direction: column;
             margin:0;
-            padding: 0 !important;
-            width: 100%;
             img {
                 width: 20%;
                 display: flex;
@@ -295,12 +273,6 @@ body {
             
         }
 
-        
-       >h2 {
-           margin: 30px;
-           padding: 0 30px;
-           text-align:left;;
-       }
 
     }
     // &__two {
@@ -328,7 +300,8 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap:15px
+            justify-content: center;
+            gap:15px;
         }
     
     
@@ -337,7 +310,7 @@ body {
 .city {
     text-align: left;
     font-size: 0.8em;
-    margin: auto 0px;
+    margin: auto;
     padding: 20px;
     @media (max-width:900px) {
         display: flex;
@@ -359,7 +332,6 @@ body {
         @media (max-width:900px) {
         padding: 2px;
         display: flex;
-        flex-direction: column;
         gap:10px
     }
     i {
